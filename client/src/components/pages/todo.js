@@ -24,7 +24,7 @@ function Todo() {
         const token = readCookie("token");
         try {
           const res = await axios.get(
-            "http://localhost:5000/api/v1/users/infor",
+            "/api/v1/users/infor",
             {
               headers: { auth_token: token },
             }
@@ -43,7 +43,7 @@ function Todo() {
   const getAllTasks = async () => {
     const token = readCookie("token");
     try {
-      const res = await axios.get("http://localhost:5000/api/v1/tasks", {
+      const res = await axios.get("/api/v1/tasks", {
         headers: { auth_token: token },
       });
       setTasks(res.data.results);
