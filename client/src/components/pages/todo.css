@@ -1,0 +1,25 @@
+#create_to_do_page {
+    height: 100vh;
+}
+
+#tasks_container{
+    padding-top: 10vh;
+}
+
+#todocontainer {
+    display:flex;
+    margin-top: 1vh;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right:40%;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+  }
+
+
+
+.btn {
+    margin-left: 1vh;
+}
