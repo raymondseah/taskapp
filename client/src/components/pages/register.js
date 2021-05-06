@@ -30,7 +30,7 @@ function Register() {
       localStorage.setItem("firstLogin", true);
       alert(res.data.msg);
 
-      window.location.href = "https://task-appplication.herokuapp.com/login";
+      window.location.href = "/login";
     } catch (err) {
       alert(err.response.data.msg);
     }

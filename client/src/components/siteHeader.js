@@ -52,7 +52,7 @@ function SiteHeader() {
     };
     delete_cookie("token");
 
-    window.location.href = "https://task-appplication.herokuapp.com/";
+    window.location.href = "/";
   };
 
   return (
@@ -65,7 +65,7 @@ function SiteHeader() {
                 <li className="nav-item">
                   <IconButton>
                     <Home style={{ fontSize: "20px" }} />
-                    <Link to="https://task-appplication.herokuapp.com/create" className="nav-link">
+                    <Link to="/create" className="nav-link">
                       Create Task
                     </Link>
                   </IconButton>
@@ -73,7 +73,7 @@ function SiteHeader() {
                 <li className="nav-item">
                   <IconButton fontSize="small">
                     <ExitToApp style={{ fontSize: "20px" }} />
-                    <Link to="https://task-appplication.herokuapp.com/" onClick={logoutUser} className="nav-link">
+                    <Link to="/" onClick={logoutUser} className="nav-link">
                       Logout
                     </Link>
                   </IconButton>
@@ -84,7 +84,7 @@ function SiteHeader() {
                 <li className="nav-item">
                   <IconButton>
                     <PersonSharp style={{ fontSize: "20px" }} />
-                    <Link to="https://task-appplication.herokuapp.com/" className="nav-link">
+                    <Link to="/" className="nav-link">
                       Login
                     </Link>
                   </IconButton>
@@ -92,7 +92,7 @@ function SiteHeader() {
                 <li className="nav-item">
                   <IconButton>
                     <AddCircleOutline style={{ fontSize: "20px" }} />
-                    <Link to="https://task-appplication.herokuapp.com/register" className="nav-link">
+                    <Link to="/register" className="nav-link">
                       Register
                     </Link>
                   </IconButton>
