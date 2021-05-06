@@ -32,7 +32,7 @@ function Login() {
         expires: moment.unix(res.data.expiresAt).toDate(),
       });
       alert(res.data.msg)
-      window.location.href = "/create";
+      window.location.href = "https://task-appplication.herokuapp.com/create";
     } catch (err) {
       alert(err);
     }
