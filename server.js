@@ -14,7 +14,7 @@ const path = require('path')
 ///////////////////////
 const mongoURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/${process.env.DB_NAME}`;
 mongoose.set("useFindAndModify", false);
-
+///////////////////////
 app.use(methodOverride("_method"));
 app.use(
   express.urlencoded({
